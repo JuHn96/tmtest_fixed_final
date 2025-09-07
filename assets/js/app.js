@@ -19,7 +19,7 @@
       Init.w();
       Init.BackToTop();
       Init.preloader();
-      Init.menuShow();
+      Init.StudyShow();
       Init.intializeSlick();
       Init.dropdown();
       Init.formValidation();
@@ -56,12 +56,12 @@
         }
       }, 3000);
     },
-    menuShow: function (e) {
-      $('.menu-block').on('click', function () {
+    StudyShow: function (e) {
+      $('.Study-block').on('click', function () {
         var id = $(this).attr("id");
-        $('.menu-block').removeClass('active');
+        $('.Study-block').removeClass('active');
         $(this).addClass('active');
-        $('#menuDetail .menu-item').hide('slow');
+        $('#StudyDetail .Study-item').hide('slow');
         $('.' + id).show('slow');
       })
     },
